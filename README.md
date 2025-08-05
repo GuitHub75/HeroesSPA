@@ -13,7 +13,7 @@ Esta es una Single Page Application (SPA) de Héroes creada con React y Vite. La
 ## Demo
 
 Puedes ver una demostración en vivo de la aplicación aquí:  
-[https://guithub75.github.io/marvel](https://guithub75.github.io/marvel)
+[https://guithub75.github.io/HeroesSPA/](https://guithub75.github.io/HeroesSPA/)
 
 
 
