@@ -1,7 +1,8 @@
 import { useState, useEffect, useMemo } from "react";
 import { getHeroeById } from "../helpers";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
-import "../../../assets/css/HeroPage.css";
+import "../../../public/assets/css/HeroPage.css";
+
 
 export const HeroPage = () => {
 
@@ -51,7 +52,7 @@ export const HeroPage = () => {
                       }`}
                     >
                       <img
-                        src={`/assets/heroes/${heroe.id}.jpg`}
+                        src={`../public/assets/heroes/${heroe.id}.jpg`}
                         alt={heroe.superhero}
                         className="img-fluid rounded hero-img"
                       />

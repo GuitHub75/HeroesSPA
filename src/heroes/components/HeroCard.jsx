@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 export const HeroCard = ({
@@ -14,7 +13,7 @@ export const HeroCard = ({
         <div className="card">
             <div className="row no-gutters">
                 <div className="col-4">
-                    <img src={`./assets/heroes/${id}.jpg`} className="card-img" alt={superhero} />
+                    <img src={`../public/assets/heroes/${id}.jpg`} className="card-img" alt={superhero} />
                 </div>
                 <div className="col-8">
                     <div className="card-body">
