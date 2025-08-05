@@ -1,12 +1,61 @@
-# React + Vite
+# Heroes SPA (Single Page Application)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta es una Single Page Application (SPA) de Héroes creada con React y Vite. La aplicación permite a los usuarios buscar héroes, ver sus detalles y navegar entre diferentes secciones como Marvel y DC.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Búsqueda de héroes en tiempo real.
+- Páginas de detalle para cada héroe.
+- Rutas protegidas y un sistema de login/logout simple.
+- Construido con un enfoque en componentes reutilizables.
+- Rápido y eficiente gracias a Vite.
 
-## Expanding the ESLint configuration
+## Tecnologías Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- React Router para el enrutamiento.
+- Bootstrap para los estilos (o la librería de CSS que se esté usando).
+
+## Puesta en Marcha
+
+Sigue estos pasos para tener una copia del proyecto corriendo en tu máquina local para desarrollo y pruebas.
+
+### Prerrequisitos
+
+Necesitarás tener Node.js y npm (o yarn) instalados en tu sistema.
+
+- Node.js (v18.x o superior recomendado)
+- npm (viene con Node.js)
+
+### Instalación
+
+1.  Clona el repositorio:
+    ```bash
+    git clone https://github.com/tu-usuario/07-hores-spa.git
+    ```
+2.  Navega al directorio del proyecto:
+    ```bash
+    cd 07-hores-spa
+    ```
+3.  Instala las dependencias:
+    ```bash
+    npm install
+    ```
+
+## Scripts Disponibles
+
+En el directorio del proyecto, puedes ejecutar:
+
+### `npm run dev`
+
+Ejecuta la aplicación en modo de desarrollo.
+Abre http://localhost:5173 (o el puerto que indique Vite) para verla en tu navegador. La página se recargará automáticamente si haces cambios.
+
+### `npm run build`
+
+Construye la aplicación para producción en la carpeta `dist`. Empaqueta React en modo de producción y optimiza la compilación para obtener el mejor rendimiento.
+
+### `npm run preview`
+
+Ejecuta un servidor local para previsualizar el build de producción que se encuentra en la carpeta `dist`.
