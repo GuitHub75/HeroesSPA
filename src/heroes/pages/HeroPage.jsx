@@ -1,18 +1,15 @@
 import { useState, useEffect, useMemo } from "react";
 import { getHeroeById } from "../helpers";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
-import "../../../public/assets/css/HeroPage.css";
-
 
 export const HeroPage = () => {
-
   const [isLoaded, setIsLoaded] = useState(false);
 
   const navigate = useNavigate();
 
-  const {Id} = useParams();
+  const { Id } = useParams();
   const heroe = useMemo(() => getHeroeById(Id), [Id]); //cuando Id cambia, recalcula heroe
-  
+
   if (!heroe) {
     return <Navigate to="/marvel" />;
   }
@@ -52,7 +49,7 @@ export const HeroPage = () => {
                       }`}
                     >
                       <img
-                        src={`../public/assets/heroes/${heroe.id}.jpg`}
+                        src={`/assets/heroes/${heroe.id}.jpg`}
                         alt={heroe.superhero}
                         className="img-fluid rounded hero-img"
                       />
