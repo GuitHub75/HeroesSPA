@@ -49,7 +49,7 @@ export const HeroPage = () => {
                       }`}
                     >
                       <img
-                        src={`/assets/heroes/${heroe.id}.jpg`}
+                        src={`${import.meta.env.BASE_URL}/assets/heroes/${heroe.id}.jpg`}
                         alt={heroe.superhero}
                         className="img-fluid rounded hero-img"
                       />
