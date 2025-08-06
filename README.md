@@ -15,7 +15,11 @@ Esta es una Single Page Application (SPA) de Héroes creada con React y Vite. La
 Puedes ver una demostración en vivo de la aplicación aquí:  
 [https://guithub75.github.io/HeroesSPA/](https://guithub75.github.io/HeroesSPA/)
 
+## Captura de Pantalla
 
+Puedes ver una imagen de la aplicación a continuación:
+
+![Vista previa de Heroes SPA](./public/assets/image.png)
 
 ## Tecnologías Utilizadas
 
