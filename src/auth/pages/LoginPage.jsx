@@ -3,16 +3,12 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 
 export const LoginPage = () => {
-
   const navigate = useNavigate();
-  const {login} = useContext(AuthContext)
+  const { login } = useContext(AuthContext);
 
   const onLogin = () => {
-    login('ERICK ESCOBAR SUAREZ');
-    navigate('/marvel',{
-      replace: true //evita que el usuario pueda regresar a la pagina anterior con el boton de atras
-    });
-  }
+        login("Erick Escobar");
+  };
 
   return (
     <div className="container mt-5">
@@ -21,7 +17,6 @@ export const LoginPage = () => {
       <button className="btn btn-primary" onClick={onLogin}>
         Login
       </button>
-
     </div>
-  )
-}
+  );
+};
