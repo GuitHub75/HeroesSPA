@@ -7,12 +7,13 @@ export const HeroCard = ({
     first_appearance,
     characters,
 }) => {
-    const heroImageUrl = `/heroes/${id}.jpg`
-    console.log(heroImageUrl);
+    
+  const heroImageUrl = `${import.meta.env.BASE_URL}heroes/${id}.jpg`;
+
   return (  
     <div className="col">
         <div className="card">
-            <div className="row no-gutters">
+            <div className="row no-gutters">    
                 <div className="col-4">
                     <img src={ heroImageUrl } className="card-img" alt={superhero} />
                 </div>

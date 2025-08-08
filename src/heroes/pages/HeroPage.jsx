@@ -26,7 +26,7 @@ export const HeroPage = () => {
     navigate(-1);
   };
 
-      const heroImageUrl = `/heroes/${heroe.id}.jpg`
+  const heroImageUrl = `${import.meta.env.BASE_URL}heroes/${heroe.id}.jpg`;
 
   return (
     <div className="container-fluid py-5 hero-bg">

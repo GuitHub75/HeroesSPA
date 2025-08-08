@@ -6,7 +6,7 @@ import { HeroesApp } from "./HeroesApp.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <HeroesApp />
     </BrowserRouter>
   </StrictMode>
